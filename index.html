@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal - Marlon N.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <style>
+        :root { --steam-dark: #0b141a; --steam-nav: #0f161e; --steam-blue: #00d2ff; }
+
+        html { scroll-behavior: smooth; }
+
+        body { background-color: var(--steam-dark); color: white; font-family: 'Segoe UI', sans-serif; overflow-x: hidden; } 
+    </style>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Logo" class="brand-logo me-2" style="height: 50px;">
+                <span class="text-white">Marlon <span class="text-info">N.</span></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+<div class="container mt-4"> 
+    <div class="d-flex align-items-center mb-3"> 
+        <h2 class="text-white fw-bold mb-0" style="border-left: 4px solid #00d2ff; padding-left: 15px; font-size: 1.8rem;">
+            Per<span class="text-info">fil</span>
+        </h2>
+        <div class="ms-3 flex-grow-1 opacity-25" style="border-bottom: 1px solid #00d2ff;"></div>
+    </div>
+
+    <!-- Sección de perfil desarrollada -->
+    <div class="row align-items-center bg-steam-dark p-4 rounded-4 shadow-lg mb-4" style="background-color: #0f161e; border: 1px solid rgba(0, 210, 255, 0.2);">
+        <!-- Imagen circular a la izquierda -->
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="position-relative d-inline-block">
+                <img src="./img.jpg" 
+                     alt="Foto de perfil" 
+                     class="rounded-circle border border-4 border-info shadow-lg"
+                     style="width: 250px; height: 250px; object-fit: cover;">
+                <div class="position-absolute bottom-0 end-0 bg-info rounded-circle p-2 border border-3 border-dark">
+                    <i class="fas fa-check text-dark fs-5"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Información personal a la derecha -->
+        <div class="col-md-8">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                    <p class="text-info mb-2"><i class="fas fa-map-marker-alt me-2"></i>Zulia, Venezuela</p>
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="badge bg-info text-dark px-3 py-2 fw-semibold">Desarrollador Web</span>
+                        <span class="badge bg-dark border border-info px-3 py-2">Diseñador UI/UX</span>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <button class="btn btn-outline-info btn-sm px-4 fw-bold">Curriculum</button>
+                </div>
+            </div>
+            
+            <!-- Estadísticas -->
+            <div class="row text-center mb-4">
+                <div class="col-4">
+                    <h3 class="text-info fw-bold mb-1">Marlon David</h3>
+                    <p class="text-secondary small mb-0">Nombres</p>
+                </div>
+                <div class="col-4 border-start border-end border-secondary">
+                    <h3 class="text-info fw-bold mb-1">Nava Nava</h3>
+                    <p class="text-secondary small mb-0">Apellidos</p>
+                </div>
+                <div class="col-4">
+                    <h3 class="text-info fw-bold mb-1">32.439.255</h3>
+                    <p class="text-secondary small mb-0">C.I</p>
+                </div>
+            </div>
+            
+            <!-- Biografía -->
+            <div class="mb-4">
+                <h5 class="text-white fw-bold mb-3"><i class="fas fa-user me-2 text-info"></i>Sobre mí</h5>
+                <p class="text-light mb-3" style="line-height: 1.6;">
+                    Desarrollador full-stack apasionado por crear experiencias digitales únicas. 
+                    Especializado en diseño de interfaces y desarrollo web moderno. Me encanta 
+                    transformar ideas en realidades funcionales y elegantes.
+                </p>
+                <p class="text-light" style="line-height: 1.6;">
+                    En mi tiempo libre disfruto de videojuegos, especialmente Shooters. 
+                    Siempre buscando nuevos desafíos y aprendiendo tecnologías emergentes.
+                </p>
+            </div>
+            
+            <!-- Habilidades -->
+            <div>
+                <h5 class="text-white fw-bold mb-3"><i class="fas fa-code me-2 text-info"></i>Habilidades técnicas</h5>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="skill-badge">HTML/CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Figma</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Python</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<div class="container mt-4"> 
+    <div class="d-flex align-items-center mb-3"> 
+        <h2 class="text-white fw-bold mb-0" style="border-left: 4px solid #00d2ff; padding-left: 15px; font-size: 1.8rem;">
+            proye<span class="text-info">ctos</span>
+        </h2>
+        <div class="ms-3 flex-grow-1 opacity-25" style="border-bottom: 1px solid #00d2ff;"></div>
+    </div>
+
+    <div class="flex-card-wrapper mt-2">
+        <article class="flex-card-container">
+            <div class="flex-card-img-container">
+                <img src="./img/sa.png" alt="System Assistense" class="flex-card-img">
+            </div>
+            <div class="overlay">
+                <p class="game-title">System Assistense</p>
+                <div class="platforms">
+                    <img src="./img/win.png" alt="PC">
+                </div>
+            </div>
+        </article>
+        
+        <article class="flex-card-container">
+            <div class="flex-card-img-container">
+                <img src="./img/sd.jpg" alt="Sillon Diabolico" class="flex-card-img">
+            </div>
+            <div class="overlay">
+                <p class="game-title">Sillón Diabólico</p>
+                <div class="platforms">
+                    <img src="./img/web.png" alt="Web">
+                </div>
+            </div>
+        </article>
+        
+        <article class="flex-card-container">
+            <div class="flex-card-img-container">
+                <img src="./img/detroit.jpg" alt="Detroit Become Human" class="flex-card-img">
+            </div>
+            <div class="overlay">
+                <p class="game-title">Detroit Become Human</p>
+                <div class="platforms">
+                    <img src="./img/win.png" alt="PC">
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<div class="container"><hr class="separador-valorant"></div>
+
+<div class="container mt-5 mb-5">
+    <div class="p-5 text-center rounded-4 shadow-lg text-dark" style="background: linear-gradient(45deg, #00d2ff, #3a7bd5);">
+        <h2 class="fw-bold">Contactame</h2>
+    </div>
+</div>
+
+<footer class="bg-dark text-white pt-5 pb-3 mt-5" style="border-top: 2px solid #00d2ff;">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4">
+                <img src="logo.png" width="120" class="mb-3" alt="Logo">
+            </div>
+            <div class="col-md-4 mb-4 text-md-end text-center">
+                <h5 class="text-info mb-3">Mis Redes</h5>
+                <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#" class="text-info fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-info fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-info fs-4"><i class="bi bi-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-secondary opacity-25">
+        <div class="text-center text-secondary small">&copy; 2026 Marlon N. </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+window.onscroll = function() {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 50) { nav.classList.add('navbar-scrolled'); } 
+    else { nav.classList.remove('navbar-scrolled'); }
+};
+</script>
+</body>
+</html>

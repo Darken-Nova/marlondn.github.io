@@ -1,0 +1,205 @@
+        .skill-badge {
+            background: rgba(0, 210, 255, 0.1);
+            color: #00d2ff;
+            padding: 6px 15px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        .skill-badge:hover {
+            background: rgba(0, 210, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .bg-steam-dark {
+            background-color: #0f161e;
+        }
+
+.navbar {
+            background-color: #0f161e !important;
+            border-bottom: 2px solid rgba(0, 210, 255, 0.6) !important;
+            padding: 15px 0;
+            transition: all 0.4s ease;
+        }
+        .navbar-scrolled { padding: 5px 0 !important; background-color: rgba(15, 22, 30, 0.95) !important; backdrop-filter: blur(10px); }
+
+        @media (min-width: 992px) {
+            .navbar-collapse { position: relative; }
+            .navbar-center { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; }
+        }
+
+        #seccion-ofertas, #seccion-categorias { scroll-margin-top: 100px; }
+
+        .separador-valorant {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--steam-blue), transparent);
+            margin: 60px 0;
+            opacity: 0.5;
+        }
+
+        .game-card { 
+            background-color: #1a242d !important; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: 0.3s;
+            overflow: hidden; 
+        }
+        .game-card:hover { border-color: var(--steam-blue); transform: translateY(-5px); }
+
+        .game-card .card-img-top {
+            height: 320px; 
+            object-fit: cover; 
+            width: 100%;
+        }
+        
+
+        .cat-btn { 
+            background-color: #171d25; 
+            color: white; 
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 30px 10px; 
+            transition: 0.3s; 
+            text-decoration: none; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            min-height: 140px; 
+        }
+        .cat-btn:hover { background-color: var(--steam-blue); color: #0b141a; }
+        .cat-btn i { font-size: 2.5rem; color: var(--steam-blue); transition: 0.3s; }
+        .cat-btn:hover i { color: #0b141a; }
+
+        .hover-cyan:hover { color: var(--steam-blue) !important; }
+
+.flex-card-wrapper {
+    display: flex;
+    width: 100%;
+    height: 450px; 
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 10px !important;
+}
+
+.flex-card-container {
+    position: relative;
+    flex: 1; 
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: flex 0.6s cubic-bezier(0.25, 1, 0.2, 1);
+}
+
+.flex-card-container:hover {
+    flex: 1.5;
+}
+
+/* Contenedor de imagen para controlar mejor el contenido */
+.flex-card-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.2, 1);
+}
+
+.flex-card-container:hover .flex-card-img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.flex-card-container:hover .overlay {
+    opacity: 1;
+}
+
+.platforms {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 5; 
+}
+
+.platforms img {
+    width: 25px !important;  
+    height: 30px !important;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.game-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    color: white;
+}
+
+/* Animación de entrada para el logo */
+@keyframes zoomInLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.brand-logo {
+    display: inline-block;
+    animation: zoomInLogo 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transition: transform 0.3s ease;
+}
+
+/* Navbar estilos mínimos */
+.navbar {
+    transition: all 0.4s ease-in-out;
+    background-color: transparent !important;
+    padding: 20px 0;
+}
+
+.nav-link {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00d2ff !important;
+}
+
+.btn-outline-info {
+    color: #00d2ff;
+    border-color: #00d2ff;
+    border-width: 2px;
+}
+
+.btn-outline-info:hover {
+    background-color: #00d2ff;
+    color: #0f161e;
+}
+
+.btn-info {
+    background-color: #00d2ff;
+    border: none;
+    color: #0f161e;
+}
